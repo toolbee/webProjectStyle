@@ -1,0 +1,131 @@
+
+/*폰트 적용*/
+@font-face {
+	font-family: 'bmyeonsung';
+	src: url(fonts/BMYEONSUNG_ttf.ttf) format('truetype');
+}
+/* 상단 메뉴 헤더*/
+header {
+	margin: 0;
+
+}
+.jumbotron {
+	padding: 0;
+	position: fixed;
+	width: 100%;
+	opacity: 0.8;
+	z-index: 3;
+	margin: 0;
+	background-color: transparent;
+	transition: background-color 0.5s;
+}
+.jumbotron:hover {
+	background-color: #eee;
+	/*transform: 2s;*/
+}
+.jumbotron:hover #login_button {
+	color: black;
+	/*transform: 2s;*/
+}
+
+.logo {
+	width: 150px;
+	margin: 10px;
+	margin-left: 18%; 
+}
+
+#login_button_div {
+	float: right;
+	margin: 15px 20% 8px 1%;
+	z-index: 5;
+}
+
+#login_button {
+	color: white;
+	font-weight: bold;
+	font-size: 16px;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	transition: color 0.5s;
+}
+#login_button:active {
+	border: none;
+	outline: none;
+}
+
+#search_bar {
+	width: 400px;
+	height: 35px;
+	font-size: 16px;
+}
+
+.search_bar:focus + button {
+	z-index: 3;   
+}
+
+#search_bar,
+#search_button {
+	position: absolute;
+	right: 33.5%;
+	top: 15px;
+	border: 0;
+	/*background: none;*/
+}
+#search_bar:focus {
+	outline: none;
+}
+
+/*메인 레터링*/
+#main_letter {
+	position: fixed;
+	top: 400px;
+	left: 20%;
+}
+#main_letter > .title {
+	color: white;
+	/*font-weight: bold;*/
+	font-size: 30px;
+}
+#main_letter > .storeName {
+	color: white;
+	/*font-weight: bold;*/
+	font-size: 50px;
+	font-family: 'bmyeonsung';
+}
+
+/*본문*/
+
+#content img{
+	width: 100%;
+	margin-bottom: 3%; 
+}
+#content {
+	
+	margin-top: 40px;
+}
+#content h3 {
+	font-weight: bold;
+}
+#content p {
+	font-size: 16px;
+}
+#middler {
+	height: 3000px;
+	position: relative;
+	top: 700px;
+	background-color: white;
+}
+
+
+/*메인 이미지, 박스*/
+
+#main_img {
+	/*filter: blur(3px);*/
+	height: 1000px;
+	position: fixed;
+	min-width: 100%;
+	display: block;
+	background-size: cover;
+	background-position: 50% 50%;
+}

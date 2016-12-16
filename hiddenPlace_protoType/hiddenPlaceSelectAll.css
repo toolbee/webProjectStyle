@@ -1,0 +1,205 @@
+ #sign_up_border{
+ 	margin-top: 0%;
+ 	margin-bottom: 0%;
+ 	border-top: 1px solid #3399ff;
+ }
+
+ #sign_up_border_category{
+ 	margin-top: 0%;
+ 	margin-bottom: 3%;
+ 	border-top: 1px solid #3399ff;
+ 	}
+ 	/*sign_up_border_category*/
+
+ 	#sign_up_border_bottom {
+ 		margin-top: -4%;
+ 		margin-bottom: 3%;
+ 		margin-lift: 0%;
+
+ 	}
+
+ 	#checkbox_border_rigth {
+ 		height: 180px;
+ 		border-right: 1px solid #3399ff;
+ 	}
+
+ 	#orange_hr_border {
+ 		margin: 0%;
+ 		border-top: 0px solid #fe5c2d;
+ 		width: 2%;
+ 	}
+
+ 	#best_margin_bottom {
+ 		margin-bottom: 2%;
+ 		margin-left:140px;
+ 	}
+
+ 	#checkbox_padding{
+ 		margin-top: 0%;
+ 		padding-right: 5px;
+ 		padding-left: 5px;
+ 	}
+
+ 	#category_search_button {
+ 		float: right;
+ 		background: #3399ff;
+ 		color: white;
+ 		border: none;
+ 		margin-bottom: 1%;
+ 		margin-right: 4%;
+ 	}
+
+ 	#loot_writer_button {
+ 		float: right;
+ 		background: #3399ff;
+ 		color: white;
+ 		border: none;
+ 		margin-top: 2%;
+ 		margin-bottom: 1%;
+ 		margin-right: 4%;
+ 	}
+
+ 	#custom-search-form .search-query {
+	/* padding-right: 3px;
+         padding-right: 4px \9;
+         padding-left: 3px;
+         padding-left: 4px \9; */
+         width: 400px;
+         height: 40px;
+         text-align: center;
+         border-color: black;
+         margin-bottom: 0;
+         -webkit-border-radius: 5px;
+         -moz-border-radius: 5px;
+     }
+
+     #custom-search-form button {
+     	border: 0;
+     	background: none;
+     	padding: 2px 5px;
+     	margin-top: 2px;
+     	position: relative;
+     	left: -28px;
+     	margin-bottom: 0;
+     	-webkit-border-radius: 5px;
+     	-moz-border-radius: 5px;
+     }
+
+
+     #bottom_border {
+     	margin-left:-50px;
+     	margin-top: 0%;
+     	margin-bottom: 3%;
+     	border-top: 1px solid #3399ff;
+     }
+
+     #checkbox_padding_other {
+
+     	margin-top: -2%;
+
+     	width : 20%;
+
+     }
+
+
+   
+     .route_best_space {
+     	height: 20px;
+     	margin-bottom: 1%;
+     }
+
+     #route_best_img-circle {
+     	width: 80px;
+     	height: 80px;
+     	margin-top: -5%
+     }
+
+     .route_best_article {
+     	margin-left:60px;
+     	margin-bottom:7px;
+     }
+
+     #route_list_name{
+
+     	margin-left:-80px;
+     	margin-top:-64px;
+
+     }
+
+     .best-img-circle {
+     	width: 40px;
+     	height: 40px;
+     	margin-top:8px;
+     	margin-left:0px;
+
+     }
+
+     .route-hiddenPlace_img {
+     	width: 350px;
+     	height: 250px;
+     	magin-right:-50px;
+     }
+
+     .best-img-circle{
+
+     	width : 40px;
+     	height: 40px;
+
+     }
+
+     .best_hiddenPlace_img{
+
+     	width : 350px;
+     	height: 300px;
+     }
+
+     .category_margin_bottom{
+     	margin-top:10px;
+     	margin-bottom:5px;
+     }
+
+     
+     /*내알못 추천 */
+     #main_body {
+     	margin-top: 3%;		
+     }
+
+     #main_hiddenPlace {
+     	margin-top: 2%;
+     }
+     #main_hiddenPlace > div > div > div {
+     	padding: 0;
+     	margin-right: 30px;
+     }
+     .img-circle {
+     	width : 40px;
+     	height: 40px;
+     }
+     .personal_article {
+     	width: 200%;
+     }
+     .personal_article_space {
+     	height: 40px;
+     	margin-bottom: 1%;
+     }
+     .name {
+     	font-weight: bold;
+     	color: #0033cc;
+     	font-family: "견명조", "윤고딕", "맑은 고딕", sans-serif;
+     }
+     .insert_date {
+     	font-style: italic;
+     }
+
+     .hiddenPlace_img{
+     	width: 100%;
+     	height: 200px;
+     }
+     .text {
+     	position: absolute;
+     	top:40px;
+     	left: 80px;
+     	width: 700%;
+     }
+
+

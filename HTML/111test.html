@@ -1,0 +1,243 @@
+<!DOCUTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>home</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link rel="shortcut icon" href="images/favicon.ico" />
+	
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/animate.css" />
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="css/swiper.min.css" /> -->
+	<script src="javascript/pace.min.js"></script>
+
+	<!-- 구글 웹폰트 -->
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+
+	<!-- <link rel="stylesheet" type="text/css" href="css/style.css" /> -->
+	<style type="text/css">
+		/*메인 이미지, 박스*/
+		.jumbotron {
+			padding: 0;
+			margin: 0;
+			/*position: fixed;*/
+		}
+
+		#main_img {
+			/*width: 1600px;*/
+			position: fixed;
+			/*filter: grayscale(50%);*/
+			filter: blur(3px);
+		}
+
+		/*메인 레터링*/
+		#main_letter {
+			position: absolute;
+			top: 400px;
+			left: 20%;
+		}
+		#main_letter > p {
+			color: white;
+			/*font-weight: bold;*/
+			font-size: 80px;
+			/*font-family: 'Lato';*/
+		}
+
+		/* 검색 바*/
+		#search_button {
+			width: 50px;
+			height: 50px;
+			border-radius: 0;
+		}
+		#search_bar {
+			width: 600px;
+			height: 50px;
+			font-size: 20px;
+		}
+
+		.search_bar:focus + button {
+			z-index: 3;   
+		}
+
+		#search_bar,
+		#search_button {
+			position: absolute;
+			right: 31%;
+			/*left: 30%;*/
+			top: 550px;
+			border: none;
+			outline: none;
+			/*background: none;*/
+		}
+		#search_bar:focus {
+			outline: none;
+		}
+
+		/*로고*/
+		#logo_img {
+			position: fixed;
+			width: 180px;
+			top: 50px;
+			left: 6%;
+		}
+
+		/*로그인 버튼*/
+		#login_button_div {
+			position: fixed;
+			top: 60px;
+			right: 8%;
+		}
+		#login_button_div > button {
+			background-color: transparent;
+			border: none;
+			outline: none;
+			color: white;
+			font-size: 18px;
+		}
+
+		/*본문*/
+		section {
+			/*margin-top: 1000px; */
+		}
+		.content > img{
+			width: 100%;
+		}
+		.content {
+			position: relative;
+			/*top: 0px;*/
+			margin-top: 40px;
+		}
+		#middler {
+			height: 1000px;
+			position: relative;
+			top: 700px;
+			background-color: white;
+		}
+		#content_letter_MHP {
+			position: relative;
+			top: -250px;
+
+		}
+		#content_letter_MHP > p {
+			font-size: 120px;
+			/*font-weight: bold;*/
+			color: white;
+			/*color: black;*/
+			margin: 0;
+			text-align: center;
+			font-family: 'Indie Flower', cursive;
+			
+		}
+		#content_letter_MR {
+			position: relative;
+			top: -400px;
+
+		}
+		#content_letter_MR > p {
+			font-size: 120px;
+			/*font-weight: bold;*/
+			color: white;
+			/*color: black;*/
+			margin: 0;
+			text-align: center;
+			font-family: 'Indie Flower', cursive;
+		}
+
+		#content_MR {
+			position: relative;
+			top : -130px;
+		}
+
+		#player {
+			z-index: 100;	
+			/*position: fixed;*/
+			width: 500px;
+			height: 500px;
+		}	
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<script type="text/javascript" charset="utf-8" src="js/jquery.tubular.1.0.js"></script>
+	<script>
+		$('document').ready(function() {
+			var options = { videoId: 'SIGTHZrEGmY', start: 0};
+   // ePpPVE-GGJw
+   $('#player').tubular(options);
+   // f-UGhWj1xww cool sepia hd
+   // 49SKbS7Xwf4 beautiful barn sepia
+});
+</script>
+
+</head>
+<body>
+	<div id="player">
+		<!-- 상단 헤더 -->
+		<header>
+			<div class="jumbotron">
+				<!-- <img id="main_img" src="images/blog-post-resizing.jpg"> -->
+
+
+				<div>
+					<img id="logo_img" src="images/logos/logo.png">
+				</div>
+				<div id="login_button_div" class="btn-group">
+					<button id="login_button" class="btn btn-default">로그인</button>
+				</div>
+				<div id="main_letter">
+					<p>당신이 알지 못했던 세상</p>
+				</div>
+				<input id="search_bar" type="text" placeholder="#서촌  #연남동카페  #걷고싶은곳" />
+				<button id="search_button" class="btn btn-default" type="button">
+					<span class="glyphicon glyphicon-search"></span>
+				</button>
+
+			</div>
+
+		</header>
+
+
+		<!-- 본문 -->
+		<section>
+			<div id="middler" class="col-sm-12">
+
+				<div class="row">
+					<div class="content col-sm-4">
+						<img src="images/portfolio/1.jpg" alt="" />
+					</div>
+					<div class="content col-sm-4">	
+						<img src="images/portfolio/2.jpg" alt="" />
+					</div>
+					<div class="content col-sm-4">	
+						<img src="images/portfolio/3.jpg" alt="" />
+					</div>
+				</div>
+				<div id="content_letter_MHP">
+					<p>The Best Hidden Places</p>
+				</div>
+
+				<div id="content_MR" class="row">
+					<div class="content col-sm-4">
+						<img src="images/portfolio/1.jpg" alt="" />
+					</div>
+					<div class="content col-sm-4">	
+						<img src="images/portfolio/2.jpg" alt="" />
+					</div>
+					<div class="content col-sm-4">	
+						<img src="images/portfolio/3.jpg" alt="" />
+					</div>
+				</div>
+				<div id="content_letter_MR">
+					<p>The Best My Routes</p>
+				</div>
+
+			</div>
+		</section>
+	</div>
+</body>
+</html>

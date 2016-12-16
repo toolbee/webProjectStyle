@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>내알못 즐겨찾기</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- 상단 공통적용 스타일시트 -->
+   <link rel="stylesheet" type="text/css" href="homeViewStyle.css">
+   <!-- 즐겨찾기 스타일시트 -->
+   <link rel="stylesheet" type="text/css" href="bookMarkView.css">
+
+   <link rel="stylesheet"
+   href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <script
+   src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <script
+   src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" type="text/css"
+   href="bootstrap/css/bootstrap.min.css" />
+   <link rel="stylesheet" type="text/css"
+   href="font-awesome/css/font-awesome.min.css" />
+
+</head>
+<body>
+   <!-- 상단 메인 메뉴 바 -->
+   <div class="container">
+      <div class="col-sm-3">
+         <a href="homeView.html"><img id="logo_img" src="logo.png"></a>
+      </div>
+      
+
+      <div class="col-sm-9">
+         <div id="login_button" class="btn-group">
+            <button type="button" class="btn btn">로그인</button>
+            <button type="button" class="btn btn">회원가입</button>
+         </div>
+      </div>
+      <div class="col-sm-7">
+         <div id="main_buttons" class="btn-group btn-group-justified">
+            <a href="#" class="btn btn">홈페이지</a> <a href="#" class="btn btn">마이페이지</a>
+            <a href="#" class="btn btn">나만의 루트</a> <a href="#" class="btn btn">즐겨찾기</a>
+         </div>
+      </div>
+
+   </div>
+
+   <!-- 메인 사진 박스 -->
+   <div id="main_img_box" class="jumbotron">
+      <img id="main_img" src="pictures/bridge.jpg" alt="성산대교">
+
+      <div class="main_img_text">
+         <h2>내가 알지 못한 멋진 곳이 궁금하신가요?</h2>
+      </div>
+      <div class="span12">
+         <form id="custom-search-form"
+         class="form-search form-horizontal pull-right">
+         <div class="input-append span12">
+            <input type="text" class="search-query" placeholder="#내가 알지 못한 곳">
+            <button type="submit" class="glyphicon glyphicon-search">
+               <i class="icon-search"></i>
+            </button>
+         </div>
+      </form>
+   </div>
+</div>
+<!-- 즐겨찾기 -->
+<div class="container">
+   <br>
+   <h2>즐겨찾기</h2>
+   <div id="line" class="col-sm-12"></div>
+   <ul class="nav nav-tabs">
+      <li class="active"><a data-toggle="tab" href="#myroute">나만의
+         루트</a></li>
+         <li><a data-toggle="tab" href="#hiddenplace">내알못</a></li>
+      </ul>
+      <div class="tab-content">
+
+         <!-- 나만의 루트 즐겨찾기 -->
+         <div id="myroute" class="tab-pane fade in active">
+            <div id="main_body" class="container">
+               <div id="main_hiddenPlace" class="row">
+
+                  <!-- 1번 글 -->
+                  <div class="col-sm-4">
+                     <div class="personal_article_space">
+                        <div class="col-sm-1">
+                         <input type="checkbox" id="delete_check"/> 
+                         <label for="delete_check"></label> 
+                    </div>
+                    <div class="col-sm-2">
+                     <div class="personal_article">
+                        <a href=""><h7 class="name">1번 지훈</h7></a>
+                     </div>
+                     <div class="personal_article">
+                        <h7 class="insert_date">2016-11-21</h7>
+                     </div>
+                  </div>
+               </div>
+               <div>
+                  <img class="hiddenPlace_img" src="route.PNG">
+               </div>
+            </div>
+
+            <!-- 2번 글 -->
+            <div class="col-sm-4">
+               <div class="personal_article_space">
+                 <div class="col-sm-1">
+                   
+                         <input type="checkbox" id="delete_check"/> <label for="delete_check"></label> 
+              </div>
+              <div class="col-sm-2">
+               <div class="personal_article">
+                  <a href="#"><h7 class="name">2번 류지은</h7></a>
+               </div>
+               <div class="personal_article">
+                  <h7 class="insert_date">2016-11-21</h7>
+               </div>
+            </div>
+         </div>
+         <div>
+            <img class="hiddenPlace_img" src="camera.jpeg">
+         </div>
+      </div>
+
+      <!-- 3번 글 -->
+      <div class="col-sm-4">
+         <div class="personal_article_space">
+            <div class="col-sm-1">
+               <input type="checkbox" id="delete_check"> 
+                         <label for="delete_check"></label> 
+               </div>
+               <div class="col-sm-2">
+                  <div class="personal_article">
+                     <a href="#"><h7 class="name">3번 류지은</h7></a>
+                  </div>
+                  <div class="personal_article">
+                     <h7 class="insert_date">2016-11-21</h7>
+                  </div>
+               </div>
+            </div>
+            <div>
+               <img class="hiddenPlace_img" src="beer.jpeg">
+            </div>
+         </div>
+
+         <!-- 4번 글 -->
+         <div class="col-sm-4">
+            <div class="personal_article_space">
+               <div class="col-sm-1">
+                   <input type="checkbox" id="delete_check"> 
+                         <label for="delete_check"></label> 
+                  </div>
+                  <div class="col-sm-2">
+                     <div class="personal_article">
+                        <a href=""><h7 class="name">4번 지훈</h7></a>
+                     </div>
+                     <div class="personal_article">
+                        <h7 class="insert_date">2016-11-21</h7>
+                     </div>
+                  </div>
+               </div>
+               <div>
+                  <img class="hiddenPlace_img" src="pictures/wall.jpg">
+               </div>
+            </div>
+
+            <!-- 5번 글 -->
+            <div class="col-sm-4">
+               <div class="personal_article_space">
+                  <div class="col-sm-1">
+                     <input type="checkbox" id="delete_check"> 
+                         <label for="delete_check"></label> 
+                     </div>
+                     <div class="col-sm-2">
+                        <div class="personal_article">
+                           <a href="#"><h7 class="name">5번 류지은</h7></a>
+                        </div>
+                        <div class="personal_article">
+                           <h7 class="insert_date">2016-11-21</h7>
+                        </div>
+                     </div>
+                  </div>
+                  <div>
+                     <img class="hiddenPlace_img" src="pictures/food5.jpg">
+                  </div>
+               </div>
+
+               <!-- 6번 글 -->
+               <div class="col-sm-4">
+                  <div class="personal_article_space">
+                     <div class="col-sm-1">
+                        <input type="checkbox" id="delete_check"> 
+                         <label for="delete_check"></label> 
+                        </div>
+                        <div class="col-sm-2">
+                           <div class="personal_article">
+                              <a href="#"><h7 class="name">6번 류지은</h7></a>
+                           </div>
+                           <div class="personal_article">
+                              <h7 class="insert_date">2016-11-21</h7>
+                           </div>
+                        </div>
+                     </div>
+                     <div>
+                        <img class="hiddenPlace_img" src="pictures/food.jpg">
+                     </div>
+                  </div>
+               </div>
+               <button id="delete_button" name="singlebutton" class="btn btn">삭제</button>
+
+            </div>
+         </div>
+
+         <!-- 내알못 즐겨찾기 -->
+         <div id="hiddenplace" class="tab-pane fade">
+            <div id="main_body" class="container">
+               <div id="main_hiddenPlace" class="row">
+
+                  <!-- 1번 글 -->
+                  <div class="col-sm-4">
+                     <div class="personal_article_space">
+                        <div class="col-sm-1">
+                           <input type="checkbox" id="delete_check"/> 
+                         <label for="delete_check"></label> 
+                           </div>
+                           <div class="col-sm-2">
+                              <div class="personal_article">
+                                 <a href=""><h7 class="name">1번 지훈</h7></a>
+                              </div>
+                              <div class="personal_article">
+                                 <h7 class="insert_date">2016-11-21</h7>
+                              </div>
+                           </div>
+                        </div>
+                        <div>
+                           <img class="hiddenPlace_img" src="route.PNG">
+                        </div>
+                     </div>
+
+                     <!-- 2번 글 -->
+                     <div class="col-sm-4">
+                        <div class="personal_article_space">
+                           <div class="col-sm-1">
+                              <input type="checkbox" id="delete_check"> 
+                         <label for="delete_check"></label> 
+                              </div>
+                              <div class="col-sm-2">
+                                 <div class="personal_article">
+                                    <a href="#"><h7 class="name">2번 류지은</h7></a>
+                                 </div>
+                                 <div class="personal_article">
+                                    <h7 class="insert_date">2016-11-21</h7>
+                                 </div>
+                              </div>
+                           </div>
+                           <div>
+                              <img class="hiddenPlace_img" src="camera.jpeg">
+                           </div>
+                        </div>
+
+                        <!-- 3번 글 -->
+                        <div class="col-sm-4">
+                           <div class="personal_article_space">
+                              <div class="col-sm-1">
+                                 <input type="checkbox" id="delete_check"> 
+                         <label for="delete_check"></label> 
+                                 </div>
+                                 <div class="col-sm-2">
+                                    <div class="personal_article">
+                                       <a href="#"><h7 class="name">3번 류지은</h7></a>
+                                    </div>
+                                    <div class="personal_article">
+                                       <h7 class="insert_date">2016-11-21</h7>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div>
+                                 <img class="hiddenPlace_img" src="beer.jpeg">
+                              </div>
+                           </div>
+
+                           <!-- 4번 글 -->
+                           <div class="col-sm-4">
+                              <div class="personal_article_space">
+                                 <div class="col-sm-1">
+                                  <input type="checkbox" id="delete_check"> 
+                         <label for="delete_check"></label> 
+                                    </div>
+                                    <div class="col-sm-2">
+                                       <div class="personal_article">
+                                          <a href=""><h7 class="name">4번 지훈</h7></a>
+                                       </div>
+                                       <div class="personal_article">
+                                          <h7 class="insert_date">2016-11-21</h7>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div>
+                                    <img class="hiddenPlace_img" src="route.PNG">
+                                 </div>
+                              </div>
+
+                              <!-- 5번 글 -->
+                              <div class="col-sm-4">
+                                 <div class="personal_article_space">
+                                    <div class="col-sm-1">
+                                      <input type="checkbox" id="delete_check"> 
+                         <label for="delete_check"></label> 
+                                       </div>
+                                       <div class="col-sm-2">
+                                          <div class="personal_article">
+                                             <a href="#"><h7 class="name">5번 류지은</h7></a>
+                                          </div>
+                                          <div class="personal_article">
+                                             <h7 class="insert_date">2016-11-21</h7>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div>
+                                       <img class="hiddenPlace_img" src="camera.jpeg">
+                                    </div>
+                                 </div>
+
+                                 <!-- 6번 글 -->
+                                 <div class="col-sm-4">
+                                    <div class="personal_article_space">
+                                       <div class="col-sm-1">
+                                         <input type="checkbox" id="delete_check"> 
+                         <label for="delete_check"></label> 
+                                          </div>
+                                          <div class="col-sm-2">
+                                             <div class="personal_article">
+                                                <a href="#"><h7 class="name">6번 류지은</h7></a>
+                                             </div>
+                                             <div class="personal_article">
+                                                <h7 class="insert_date">2016-11-21</h7>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div>
+                                          <img class="hiddenPlace_img" src="beer.jpeg">
+                                       </div>
+                                    </div>
+
+                                 </div>
+                                 <button id="delete_button" name="singlebutton" class="btn btn">삭제</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <!-- 하단 풋터 -->
+                     <div class="row">
+                        <hr>
+                     </div>
+
+                  </body>
+                  </html>
+

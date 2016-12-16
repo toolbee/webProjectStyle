@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>내알못</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css"
+	href="bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css"
+	href="font-awesome/css/font-awesome.min.css" />
+	<!-- 공통적용 css -->
+	<link rel="stylesheet" type="text/css" href="homeViewStyle.css">
+	<!-- 내알못 적용 css -->
+	<link rel="stylesheet" type="text/css" href="hiddenPlaceSelectAll.css">
+
+	<script type="text/javascript">
+
+
+
+	</script>
+</head>
+
+<body>
+
+	<!-- 상단 메인 메뉴 바 -->
+	<div class="container">
+		<div class="col-sm-3">
+			<a href="homeView.html"><img id="logo_img" src="logo.png"></a>
+		</div>
+		<div class="col-sm-9">
+			<div class="col-sm-9"></div>
+			<div class="col-sm-3">
+				<div id="login_button" class="btn-group">
+					<button type="button" class="btn btn">로그인</button>
+					<button type="button" class="btn btn">회원가입</button>
+				</div>
+			</div>
+			<div class="col-sm-7">
+				<div id="main_buttons" class="btn-group btn-group-justified">
+					<a href="#" class="btn btn">홈페이지</a> 
+					<a href="#" class="btn btn">마이페이지</a> 
+					<a href="#" class="btn btn">나만의 루트</a>
+					<a href="#" class="btn btn">즐겨찾기</a>
+				</div>
+			</div>
+			
+		</div>
+
+
+
+	</div>
+
+	<!-- 메인 사진 박스 -->
+	<div class="container-fluid">
+		<img id="main_img" src="camping.png" alt="route">
+
+		<div class="main_img_text"><h2>내가 알지 못한 멋진 곳이 궁금하신가요?</h2></div>
+
+		<div class="span12">
+			<form id="custom-search-form" class="form-search form-horizontal pull-right">
+				<div class="input-append span12">
+					<input type="text" class="search-query" placeholder="                                          #내가 알지 못한 곳">
+					<button type="submit" class="glyphicon glyphicon-search"><i class="icon-search icon-search-4x"></i></button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div class="col-md-2"></div>
+	<div class="col-md-2"></div>
+
+	<div class="row"></div>
+
+	<!-- 카테고리와 밑에 스타일선 -->
+	<div class="col-md-1"></div>
+	<div id="sign_up_border_category" class="col-md-10">
+		<div class="col-md-1" >
+			<h2>CATEGORY</h2>
+		</div>
+	</div>
+	
+
+	<!-- 지역분류  -->
+	<div class="container">
+
+		<!-- 지역분류 -->
+		<div class="col-md-1"></div>
+		<div class="col-md-1"></div>
+		<div class="col-md-4" id = "checkbox_padding">
+
+
+			
+			<div class="col-md-3" id = "checkbox_padding">
+				<ul class="list-unstyled">
+					<li><label><input type="checkbox" class="all">서울전체</label></li>
+				</ul>
+			</div>
+			
+			<div class="col-md-3" id = "checkbox_padding">
+				<ul class="list-unstyled">
+					<li><label><input type="checkbox">강남구</label></li>
+				</ul>
+			</div>
+			
+			<div class="col-md-3" id = "checkbox_padding">
+				<ul class="list-unstyled">
+					<li><label><input type="checkbox">강동구</label></li>
+				</ul>
+			</div>
+			
+			<div class="col-md-3" id = "checkbox_padding">
+				<ul class="list-unstyled">
+					<li><label><input type="checkbox">강북구</label></li>
+				</ul>
+			</div>	
+			
+
+
+			
+			<div class="col-md-3" id = "checkbox_padding">
+				<ul class="list-unstyled">
+					<li><label><input type="checkbox">강서구</label></li>
+				</ul>
+			</div>
+			
+			<div class="col-md-3" id = "checkbox_padding">
+				<ul class="list-unstyled">
+					<li><label><input type="checkbox">관악구</label></li>
+				</ul>
+			</div>
+			
+			<div class="col-md-3" id = "checkbox_padding">
+				<ul class="list-unstyled">
+					<li><label><input type="checkbox">광진구</label></li>
+				</ul>
+			</div>
+			
+			<div class="col-md-3" id = "checkbox_padding">
+				<ul class="list-unstyled">
+					<li><label><input type="checkbox">구로구</label></li>
+				</ul>
+			</div>	
+
+			
+			
+			<div class="col-md-3" id = "checkbox_padding">
+				<ul class="list-unstyled">
+					<li><label><input type="checkbox">금천구</label></li>
+				</ul>
+			</div>
+			
+			<div class="col-md-3" id = "checkbox_padding">
+				<ul class="list-unstyled">
+					<li><label><input type="checkbox">노원구</label></li>
+				</ul>
+			</div>
+			
+			<div class="col-md-3" id = "checkbox_padding">
+				<ul class="list-unstyled">
+					<li><label><input type="checkbox">도봉구</label></li>
+				</ul>
+			</div>
+			
+			<div class="col-md-3" id = "checkbox_padding">
+				<ul class="list-unstyled">
+					<li><label><input type="checkbox">동대문구</label></li>
+				</ul>
+			</div>	
+			
+			<!-- <div class="row"></div> -->
+			
+			<div class="col-md-3" id = "checkbox_padding">
+				<ul class="list-unstyled">
+					<li><label><input type="checkbox">동작구</label></li>
+				</ul>
+			</div>
+			
+			<div class="col-md-3" id = "checkbox_padding">
+				<ul class="list-unstyled">
+					<li><label><input type="checkbox">마포구</label></li>
+				</ul>
+			</div>
+			
+			<div class="col-md-3" id = "checkbox_padding">
+				<ul class="list-unstyled">
+					<li><label><input type="checkbox">서대문구</label></li>
+				</ul>
+			</div>
+			
+			<div class="col-md-3" id = "checkbox_padding">
+				<ul class="list-unstyled">
+					<li><label><input type="checkbox">서초구</label></li>
+				</ul>
+			</div>	
+
+			<!-- <div class="row"></div> -->
+			
+			<div class="col-md-3" id = "checkbox_padding">
+				<ul class="list-unstyled">
+					<li><label><input type="checkbox">성동구</label></li>
+				</ul>
+			</div>
+			
+			<div class="col-md-3" id = "checkbox_padding">
+				<ul class="list-unstyled">
+					<li><label><input type="checkbox">성북구</label></li>
+				</ul>
+			</div>
+			
+			<div class="col-md-3" id = "checkbox_padding">
+				<ul class="list-unstyled">
+					<li><label><input type="checkbox">송파구</label></li>
+				</ul>
+			</div>
+			
+			<div class="col-md-3" id = "checkbox_padding">
+				<ul class="list-unstyled">
+					<li><label><input type="checkbox">양천구</label></li>
+				</ul>
+			</div>
+			
+			<!-- <div class="row"></div> -->
+			
+			<div class="col-md-3" id = "checkbox_padding">
+				<ul class="list-unstyled">
+					<li><label><input type="checkbox">영등포구</label></li>
+				</ul>
+			</div>
+			
+			<div class="col-md-3" id = "checkbox_padding">
+				<ul class="list-unstyled">
+					<li><label><input type="checkbox">용산구</label></li>
+				</ul>
+			</div>
+			
+			<div class="col-md-3" id = "checkbox_padding">
+				<ul class="list-unstyled">
+					<li><label><input type="checkbox">은평규</label></li>
+				</ul>
+			</div>
+			
+			<div class="col-md-3" id = "checkbox_padding">
+				<ul class="list-unstyled">
+					<li><label><input type="checkbox">종로구</label></li>
+				</ul>
+			</div>	
+			
+			<!-- <div class="row"></div> -->
+			
+			<div class="col-md-3" id = "checkbox_padding">
+				<ul class="list-unstyled">
+					<li><label><input type="checkbox">중구</label></li>
+				</ul>
+			</div>
+			
+			<div class="col-md-3" id = "checkbox_padding">
+				<ul class="list-unstyled">
+					<li><label><input type="checkbox">중랑구</label></li>
+				</ul>
+			</div>
+			
+			<div class="row" id = "sign_up_border_bottom"></div>	
+
+		</div>	
+
+
+		<!-- 카테고리 중간 구분선 -->
+		<div class="col-md-1">
+			<div id="checkbox_border_rigth" class="col-md-6"></div>
+		</div>
+
+		<!-- 장소분류 -->
+		<div class="col-md-1" id = "checkbox_padding">
+			<ul class="list-unstyled">
+				<li><label><input type="checkbox" >전체</label></li>
+				<li><label><input type="checkbox" >호수</label></li>
+			</ul>
+		</div>
+
+		<div class="col-md-1" id = "checkbox_padding">
+			<ul class="list-unstyled">
+				<li><label><input type="checkbox" >카페</label></li>
+				<li><label><input type="checkbox" >기타</label></li>
+			</ul>
+		</div>
+
+		<div class="col-md-1" id = "checkbox_padding">
+			<ul class="list-unstyled">
+				<li><label><input type="checkbox" >공원</label></li>
+			</ul>
+		</div>
+
+		<div class="col-md-1" id = "checkbox_padding">
+
+			<ul class="list-unstyled">
+				<li><label><input type="checkbox" >맛집</label></li>
+			</ul>
+
+		</div>
+
+	</div>    
+
+
+	<!-- 카테고리 검색버튼 -->
+	<div class="col-md-2"></div>
+	<div id="sign_up_border_bottom" class="col-md-8"><button id="category_search_button" class="btn btn-success" >Search</button></div>
+	
+	
+	<div class="col-md-2"></div>
+	<div class="col-md-2"></div>
+	<div class="col-md-10">
+		<h2 id = "best_margin_bottom">BEST</h2>
+	</div>
+	<div class="row"></div>
+	<div class="col-md-1"></div>
+
+	<!-- 카테고리와 밑에 스타일선 -->
+	<div id="sign_up_border" class="col-md-10">
+		<div class="col-md-2"></div>
+		<div class="col-md-10">
+		</div></div>
+		<div class="col-md-2"></div>
+
+
+		<div class="container">
+
+
+			<div class="row"></div>
+
+			<!--나만의 루트 베스트-->  
+			<div id="main_hiddenPlace" class="row">
+
+				<div class="col-sm-4">
+					<div class="personal_article_space">
+						<div class="col-sm-1"><img src ="bookcafe.jpeg" class ="best-img-circle"></div>
+						<div class="col-sm-1">
+							<div class="personal_article"><a href=""><h6 class="name">존멋지훈</h6></a></div>
+							<div class="personal_article"><h6 class="insert_date">2016-11-21</h6></div>
+						</div>
+					</div>
+					<div><a href="#"><img class="best_hiddenPlace_img" src="route.png"></a>
+					</div>
+				</div>
+
+				<div class="col-sm-4">
+					<div class="personal_article_space">
+						<div class="col-sm-1"><img src ="17H.jpg" class ="best-img-circle"></div>
+						<div class="col-sm-1">
+							<div class="personal_article"><a href="#"><h6 class="name">노답류지은</h6></a></div>
+							<div class="personal_article"><h6 class="insert_date">2016-11-21</h6></div>
+						</div>
+					</div>
+					<div><a href="#"><img class="best_hiddenPlace_img" src="camera.jpeg"></a>
+					</div>
+				</div>
+
+				<div class="col-sm-4">
+					<div class="personal_article_space">
+						<div class="col-sm-1"><img src ="17H.jpg" class ="best-img-circle"></div>
+						<div class="col-sm-1">
+							<div class="personal_article"><a href="#"><h6 class="name">노답류지은</h6></a></div>
+							<div class="personal_article"><h6 class="insert_date">2016-11-21</h6></div>
+						</div>
+					</div>
+					<div><a href="#"><img class="best_hiddenPlace_img" src="beer.jpeg"></a>
+					</div>
+				</div>
+
+			</div>
+
+
+		</div>
+
+		<!--베스트 아래선  -->
+		<br><br><br>
+		<div class="col-md-1"></div>
+		<div id="sign_up_border" class="col-md-10"></div>
+		<div class="col-md-1"></div>
+
+
+		<div class="row"></div>
+
+		<!-- 내알못 추천 -->
+
+		<div id="main_body" class = "container">
+			<div id="main_hiddenPlace" class="row">
+
+				<div class="col-sm-3">
+					<div class="personal_article_space">
+						<div class="col-sm-1"><img src ="bookcafe.jpeg" class ="img-circle"></div>
+						<div class="col-sm-2">
+							<div class="personal_article"><a href=""><h6 class="name">존멋지훈</h6></a></div>
+							<div class="personal_article"><h6 class="insert_date">2016-11-21</h6></div>
+						</div>
+					</div>
+					<div><a href="#"><img class="hiddenPlace_img" src="route.png"></a>
+					</div>
+				</div>
+
+				<div class="col-sm-3">
+					<div class="personal_article_space">
+						<div class="col-sm-1"><img src ="17H.jpg" class ="img-circle"></div>
+						<div class="col-sm-2">
+							<div class="personal_article"><a href="#"><h6 class="name">노답류지은</h6></a></div>
+							<div class="personal_article"><h6 class="insert_date">2016-11-21</h6></div>
+						</div>
+					</div>
+					<div><a href="#"><img class="hiddenPlace_img" src="camera.jpeg"></a>
+					</div>
+				</div>
+
+				<div class="col-sm-3">
+					<div class="personal_article_space">
+						<div class="col-sm-1"><img src ="17H.jpg" class ="img-circle"></div>
+						<div class="col-sm-2">
+							<div class="personal_article"><a href="#"><h6 class="name">노답류지은</h6></a></div>
+							<div class="personal_article"><h6 class="insert_date">2016-11-21</h6></div>
+						</div>
+					</div>
+					<div><a href="#"><img class="hiddenPlace_img" src="beer.jpeg"></a>
+					</div>
+				</div>
+
+				<div class="col-sm-3">
+					<div class="personal_article_space">
+						<div class="col-sm-1"><img src ="17H.jpg" class ="img-circle"></div>
+						<div class="col-sm-2">
+							<div class="personal_article"><a href="#"><h6 class="name">노답류지은</h6></a></div>
+							<div class="personal_article"><h6 class="insert_date">2016-11-21</h6></div>
+						</div>
+					</div>
+					<div><a href="#"><img class="hiddenPlace_img" src="beer.jpeg"></a>
+					</div>
+				</div>
+
+			</div>
+
+			<div id="main_hiddenPlace" class="row">
+
+				<div class="col-sm-3">
+					<div class="personal_article_space">
+						<div class="col-sm-1"><img src ="bookcafe.jpeg" class ="img-circle"></div>
+						<div class="col-sm-2">
+							<div class="personal_article"><a href=""><h6 class="name">존멋지훈</h6></a></div>
+							<div class="personal_article"><h6 class="insert_date">2016-11-21</h6></div>
+						</div>
+					</div>
+					<div><a href="#"><img class="hiddenPlace_img" src="route.png"></a>
+					</div>
+				</div>
+
+				<div class="col-sm-3">
+					<div class="personal_article_space">
+						<div class="col-sm-1"><img src ="17H.jpg" class ="img-circle"></div>
+						<div class="col-sm-2">
+							<div class="personal_article"><a href="#"><h6 class="name">노답류지은</h6></a></div>
+							<div class="personal_article"><h6 class="insert_date">2016-11-21</h6></div>
+						</div>
+					</div>
+					<div><a href="#"><img class="hiddenPlace_img" src="camera.jpeg"></a>
+					</div>
+				</div>
+
+				<div class="col-sm-3">
+					<div class="personal_article_space">
+						<div class="col-sm-1"><img src ="17H.jpg" class ="img-circle"></div>
+						<div class="col-sm-2">
+							<div class="personal_article"><a href="#"><h6 class="name">노답류지은</h6></a></div>
+							<div class="personal_article"><h6 class="insert_date">2016-11-21</h6></div>
+						</div>
+					</div>
+					<div><a href="#"><img class="hiddenPlace_img" src="beer.jpeg"></a>
+					</div>
+				</div>
+
+				<div class="col-sm-3">
+					<div class="personal_article_space">
+						<div class="col-sm-1"><img src ="17H.jpg" class ="img-circle"></div>
+						<div class="col-sm-2">
+							<div class="personal_article"><a href="#"><h6 class="name">노답류지은</h6></a></div>
+							<div class="personal_article"><h6 class="insert_date">2016-11-21</h6></div>
+						</div>
+					</div>
+					<div><a href="#"><img class="hiddenPlace_img" src="beer.jpeg"></a>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- 루트쓰기버튼 -->
+		<div class="row"></div>
+		<div class="col-md-2"></div>
+		<div class="col-md-9"><button id="loot_writer_button" class="btn btn-success" >루트쓰기</button></div>
+
+
+	</body>
+	</html>
